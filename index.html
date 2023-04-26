@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo Gitpages</title>
+    <link rel="stylesheet" href="./js/script.js">
     <link rel="stylesheet" href="./css/estilo.css">
 </head>
 
@@ -53,16 +54,16 @@
         <h2>Fale Conosco</h2>
         
         <div>
-            <form action="/rm99997/action-fake.html" method="GET" onsubmit="return false">
+            <form action="./action-fake.html" method="POST" onsubmit="return true">
                     <fieldset>  
                         <legend>Contato</legend>
                         <div>
                             <label for="idNm">Nome</label>
-                            <input type="text" name="txyNm" id="idNm" placeholder="Nome">
+                            <input type="text" name="txyNm" id="idNm" placeholder="Nome" value="ale">
                         </div>
                         <div>
                             <label for="idEmail">Email</label>
-                            <input type="email" name="txyEmail" id="idEmail" placeholder="Email">
+                            <input type="email" name="txyEmail" id="idEmail" placeholder="Email" value="email@email.com">
                         </div>
                         <div>
                             <input type="submit" value="Enviar">
@@ -72,7 +73,7 @@
             </form>
         </div>
 
-        
+         
     </footer>
 
 </body>
