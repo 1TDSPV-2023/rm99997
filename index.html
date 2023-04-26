@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo Gitpages</title>
+    <link rel="stylesheet" href="./js/script.js">
     <link rel="stylesheet" href="./css/estilo.css">
 </head>
 
 <body>
 
     <header class="cabecalho">
-        <img src="./img/logo.png" alt="Monigtor de computador.">
+        <img src="./img/logo.png" alt="Monitor de computador.">
         <nav>
             <a href="#">Item-1</a>
             <a href="#">Item-2</a>
@@ -22,6 +23,10 @@
 
     <h2 class="tit-sec">Seção Foto</h2>
  
+        <div>
+            <button>CLICK</button>
+        </div>
+
     <section class="conteudo">
         <div>
             <img src="./img/lobo1.jpg" alt="Lobo">
@@ -53,16 +58,16 @@
         <h2>Fale Conosco</h2>
         
         <div>
-            <form action="/rm99997/action-fake.html" method="GET" onsubmit="return false">
+            <form action="./action-fake.html" method="POST" onsubmit="return true">
                     <fieldset>  
                         <legend>Contato</legend>
                         <div>
                             <label for="idNm">Nome</label>
-                            <input type="text" name="txyNm" id="idNm" placeholder="Nome">
+                            <input type="text" name="txyNm" id="idNm" placeholder="Nome" value="ale">
                         </div>
                         <div>
                             <label for="idEmail">Email</label>
-                            <input type="email" name="txyEmail" id="idEmail" placeholder="Email">
+                            <input type="email" name="txyEmail" id="idEmail" placeholder="Email" value="email@email.com">
                         </div>
                         <div>
                             <input type="submit" value="Enviar">
@@ -72,8 +77,40 @@
             </form>
         </div>
 
-
+         
     </footer>
+
+    <script>
+
+        //Comentario de linha
+        /*
+        * Para comentario de bloco
+        */
+
+        //Declaração de variaveis com a palavra reservada var
+        
+        var nr1 = 10;
+        var nr2 = 5;
+
+
+        //Saida de dados com console.log()
+        console.log(nr1);
+        console.log(nr2);
+
+        const botoes = document.querySelectorAll("button");
+
+        botoes.forEach( (botao)=>{
+
+            if(botao.textContent == "CLICK"){
+                botao.addEventListener("click", ()=>{
+                    alert("BOTAO");
+                })
+            }
+
+        });
+
+
+    </script>
 
 </body>
 
