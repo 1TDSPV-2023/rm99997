@@ -50,4 +50,10 @@ const imgElements = [...document.getElementsByTagName("img")];
 
 imgElements.forEach((img)=>{
     console.log(`Path das imagens : ${img.src}`);
-})
+});
+
+const botao = document.querySelector("div > button");
+
+botao.addEventListener("click", ()=>{
+    alert("TCHAU!!!")
+} );
