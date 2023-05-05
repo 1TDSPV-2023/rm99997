@@ -17,5 +17,4 @@
 
 
 //Recuperar um elemento do HTML com a função getElementById(parâmetro)
-const mn = document.getElementById("menu");
-console.log(mn.textContent);
+
