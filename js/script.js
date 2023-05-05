@@ -98,3 +98,9 @@ const aElements = document.querySelectorAll("a");
 // for (const fruta of frutas) {
 //     console
 // }
+
+const inputUser = document.querySelector("#idUser");
+
+inputUser.addEventListener("focus", ()=>{
+    inputUser.setAttribute("style","outline-color:#ff0000");
+})
