@@ -68,7 +68,9 @@ addEventListener("click", (evento)=>{
 
     }catch(msg){
         if(msg == "USUÁRIO VALIDADO!"){
-            console.log("USUÁRIO VALIDADO!")
+            
+            window.location.href = "../sucesso.html"
+
         }else{
             console.log("USUÁRIO OU SENHA INCORRETOS!");
         }
