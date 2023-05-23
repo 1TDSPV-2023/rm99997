@@ -15,9 +15,9 @@
 // let resultado = !(nr1 % nr2) ? "PAR" : "IMPAR";
 // console.log(resultado);
 
-// //Recuperar um elemento do HTML com a função getElementById(parâmetro)
-// // const mn = document.getElementById("menu");
-// // console.log(mn.textContent);
+//Recuperar um elemento do HTML com a função getElementById(parâmetro)
+// const mn = document.getElementById("menu");
+// console.log(mn.textContent);
 
 // //Recuperando uma collection de elementos...
 // const aElements = document.getElementsByTagName("a");
@@ -28,13 +28,13 @@
 // });
 
 // //Exercícios
-//1 - Recupere uma coleção de imagens da página e imprima o
+// //1 - Recupere uma coleção de imagens da página e imprima o
 // // atributo src...
 // const imgElements = [...document.getElementsByTagName("img")];
-// const imgElementsArray = [...imgElements];
-// console.log(imgElements);
+// // const imgElementsArray = [...imgElements];
+// // console.log(imgElements);
 
-//IMPRIMINDO O ATRIBUTO SRC do elemento com o forEach
+// //IMPRIMINDO O ATRIBUTO SRC do elemento com o forEach
 // imgElements.forEach((img)=>{
 //     console.log(`Path das imagens : ${img.src}`);
 // });
@@ -62,45 +62,56 @@
 //     console.log("ITEM DO ARRAY : " + numero);
 // } );
 
-
+// let frutas = ["laranja","banana","acerola","abacate","caqui","uva"];
 // console.log(frutas);
-
+// //Inserir itens ao final do array com o método push(iten);
 // frutas.push("kiwi");
 // console.log(frutas);
-
-
+// //Inserir itens no início do array com o unshift();
 // frutas.unshift("melancia");
 // console.log(frutas);
-
-
+// //Remover itens do final do array com o método pop();
 // frutas.pop();
 // console.log(frutas);
-
-
+// //Remover itens do inicio do array com o método shift();
 // frutas.shift();
 // console.log(frutas);
 
+// //Realizando a busca de um item no array usando o método indexOf(iten)
+// //Quando usamos o indexOf(iten) ele retorna o indice do item procurado.
+// // let indice = frutas.indexOf("acerola");
+// // console.log(frutas[indice]);
 
+// //Utilizando o método splice(indice do item, qtd de vezes que ele será removido), para remover um iten do array em conjunto com o indexOf(iten).
 // let indice = frutas.indexOf("abacate");
-// console.log("FRUTA QUE ESTAVA NO INDICE ANTES DA REMOÇÂO: " + frutas[indice])
-// frutas.splice(indice,1)
-// console.log("FRUTA QUE FICOU NO INDICE ANTES DA REMOÇÂO: " + frutas[indice])
+// console.log("FRUTA QUE ESTAVA NO INDICE ANTES DA REMOÇÃO : " + frutas[indice]);
+// frutas.splice(indice,1);
+// console.log("FRUTA QUE FICOU NO INDICE DEPOIS DA REMOÇÃO : " + frutas[indice]);
 // console.table(frutas);
 
+//Estrutura de repetição para iteração de collections
 let frutas = ["laranja","banana","acerola","abacate","caqui","uva"];
-const aElements = document.querySelectorAll("a");
-
-// for (let x = 0; x < aElements.length ; x++){
+const aElements  = document.querySelectorAll("a");
+//Loop for
+// for(let x = 0; x < aElements.length ; x++){
 //     console.log("Valor de x = " + aElements[x].textContent);
-// };
-
-
-// for (const fruta of frutas) {
-//     console
 // }
+// for (const fruta of frutas) {
+//     console.log("Frutas " + fruta);
+// }
+
+// for (const indice in frutas) {
+//     console.log("Fruta " + frutas[indice]);
+// }
+
+//MAP
+// frutas.map( (fruta,key)=>{
+//     console.log(`Fruta nr:${key+1} ${fruta}`);
+// });
+
 
 const inputUser = document.querySelector("#idUser");
 
 inputUser.addEventListener("focus", ()=>{
-    inputUser.setAttribute("style","outline-color:#ff0000");
-})
+    inputUser.setAttribute("style","outline-color:#ff0000;");
+});
