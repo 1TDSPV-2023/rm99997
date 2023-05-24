@@ -13,10 +13,10 @@ if(localStorage.getItem("user-token") != null){
     botaoLogout.addEventListener("click", ()=>{
         localStorage.removeItem("user-validado");
         localStorage.removeItem("user-token");
-        window.location.href = "../login.html";
+        window.location.href = "./login.html";
     });
 
 }else{
     alert("Você precisa estar logado para acessar esta página!")
-    window.location.href = "../login.html";
+    window.location.href = "./login.html";
 }

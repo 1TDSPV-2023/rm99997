@@ -1,27 +1,34 @@
 
 
+
+
+
 //LISTA DE USUÁRIOS
 let listaDeUsuarios = [
 
     {
+        avatarUsuario:"https://siteparreira.parreirabutique.com.br/wp-content/uploads/2020/12/COUVE-MANTEIGA.jpg",
         nomeCompleto : "José das Couves",
         nomeUsuario : "jose",
         senhaUsuario : "123456"
     }
     ,
     {
+        avatarUsuario:"https://upload.wikimedia.org/wikipedia/commons/f/f8/Rainstick_01.png",
         nomeCompleto : "João Paulino",
         nomeUsuario : "joao",
         senhaUsuario : "123456"
     }
     ,
     {
+        avatarUsuario:"https://www.infoescola.com/wp-content/uploads/2011/01/tomate_345187874.jpg",
         nomeCompleto : "Maria Tomaite",
         nomeUsuario : "maria",
         senhaUsuario : "123456"
     }
     ,
     {
+        avatarUsuario:"https://conceitosdomundo.pt/wp-content/uploads/2021/10/selva.jpg",
         nomeCompleto : "Paulo da Selva",
         nomeUsuario : "paulo",
         senhaUsuario : "123456"
@@ -96,7 +103,7 @@ addEventListener("click", (evento)=>{
 
             //Redirect
             setTimeout(()=>{
-                window.location.href = "../sucesso.html";
+                window.location.href = "./sucesso.html";
             },3000);
 
         }else{
